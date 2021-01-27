@@ -3,18 +3,18 @@
 ## MariaDB Installation
 ### Install
 - Download MariaDB from Docker Hub.
-``` shell
+``` bash
 docker pull mariadb
 ```
 
 - Check the docker image
-``` shell
+``` bash
 docker images
 ```
 
 ### Docker Operations
 - Run the docker
-``` shell
+``` bash
 docker run \
 -d \
 --name docker-mariadb \
@@ -27,7 +27,7 @@ mariadb:latest
 ```
 
 - Get into MariaDB container.
-``` shell
+``` bash
 docker exec -it docker-mariadb bash
 ```
 
@@ -40,12 +40,12 @@ docker pull postgres
 
 ### Validation
 - Check the docker image
-``` shell
+``` bash
 docker images
 ```
 
 ### Run
-``` shell
+``` bash
 docker run \
 -d \
 --name=docker-postgres \
@@ -58,7 +58,7 @@ postgres:latest
 ```
 
 - Get into PostgreSQL container.
-``` shell
+``` bash
 docker exec -it docker-postgres bash
 ```
 

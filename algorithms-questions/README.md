@@ -1,4 +1,6 @@
 # Algorithms Questions
 
-LeetCode, LintCode and some others.
+Solve LeetCode, LintCode and some other algorithms questions.
 
+GitHub project link:  
+https://github.com/jesselix/algorithms
