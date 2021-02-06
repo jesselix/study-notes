@@ -1,5 +1,12 @@
-# LeetCode
+# Remove Duplicates from Sorted Array
 
-LeetCode Questions.  
-https://leetcode.com/problemset/all/
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+|  |  |
+|  ---  | ---  |
+| Difficulty  | Easy |
+| Tags  | Array |
+|  |  |
+
+---
 
