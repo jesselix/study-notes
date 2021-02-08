@@ -58,7 +58,7 @@ Solution 2: two time hash map
 
 ---
 
-Solution 3: two time hash map  
+Solution 3: one time hash map  
 |  |  |
 |  ---  | ---  |
 | time complexity | O(n) |

@@ -5,20 +5,22 @@
 go to: <u>Python Installation</u>
 
 - Install Shadowsocks
-``` shell
+``` bash
 pip install shadowsocks
 ```
 
 ## Operations
 - Start SS
-``` shell
+``` bash
 ssserver -c /etc/shadowsocks.json -d start
 ```
 
 - Stop SS
-``` shell
+``` bash
 ssserver -c /etc/shadowsocks.json -d stop
 ```
+
+---
 
 ## References
 > shadowsocks  
