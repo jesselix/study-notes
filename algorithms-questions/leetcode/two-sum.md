@@ -10,7 +10,7 @@ https://leetcode.com/problems/two-sum/
 
 ---
 
-Solution 1: brutal method  
+Solution 1: brutal traverse  
 |  |  |
 |  ---  | ---  |
 | time complexity | O(n^2) |
