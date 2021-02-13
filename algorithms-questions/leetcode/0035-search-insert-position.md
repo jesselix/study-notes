@@ -5,7 +5,7 @@ https://leetcode.com/problems/search-insert-position/
 |  |  |
 |  ---  | ---  |
 | Difficulty  | Easy |
-| Tags  | Array, Two Pointers |
+| Tags  | Array, Binary Search |
 |  |  |
 
 ---
