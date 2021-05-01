@@ -20,6 +20,10 @@
     * [Container Installation](./containers/container-installation.md)
   * [Kubernetes](./containers/kubernetes.md)
 ---
+* [Web Server](./web-server/README.md)
+  * [Nginx](./web-server/nginx.md)
+    * [Nginx Installation](./web-server/nginx-installation.md)
+---
 * [Databases](./databases/README.md)
   * [Fundamentals](./databases/fundamentals/README.md)
     * [SQL](./databases/fundamentals/sql.md)
@@ -33,6 +37,7 @@
     * [MariaDB Operations](./databases/mysql/mariadb-operations.md)
       * [User Operations](./databases/mysql/user-operations.md)
     * [MySQL-Java Types](./databases/mysql/mysql-java-types.md)
+    * [MariaDB Installation](./databases/mysql/mariadb-installation.md)
   * [Oracle](./databases/oracle/README.md)
   * [Redis](./databases/redis/README.md)
     * [Cache](./databases/redis/cache.md)
@@ -50,8 +55,6 @@
     * [Python Installation](./languages/python-installation.md)
 ---
 * [Utilities](./utilities/README.md)
-  * [Nginx](./utilities/nginx.md)
-    * [Nginx Installation](./utilities/nginx-installation.md)
   * [VS Code](./utilities/vs-code.md)
   * [Proxy](./utilities/proxy.md)
     * [SS Installation](./utilities/ss-installation.md)

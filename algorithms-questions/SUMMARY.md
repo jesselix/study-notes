@@ -9,3 +9,4 @@
   * [0035 - Search Insert Position](./leetcode/0035-search-insert-position.md)
   * [0053 - Maximum Subarray](./leetcode/0053-maximum-subarray.md)
   * [0066 - Plus One](./leetcode/0066-plus-one.md)
+  * [0118 - Pascal's Triangle](./leetcode/0118-pascals-triangle.md)
