@@ -8,6 +8,7 @@
     * [Arch](./operating-systems/arch.md)
       * [Arch Installation](./operating-systems/arch-installation.md)
     * [Ubuntu](./operating-systems/ubuntu.md)
+      * [Ubuntu Installation](./operating-systems/ubuntu-installation.md)
       * [Ubuntu Networks](./operating-systems/ubuntu-networks.md)
   * [Windows](./operating-systems/windows.md)
 ---

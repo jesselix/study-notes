@@ -2,19 +2,19 @@
 
 ## Install
 - Create a java folder under usr  
-``` shell
+``` bash
 cd /usr
 mkdir java
 chmod 777 java
 ```
 
 - Put installer package in this folder and unzip it  
-```shell
+```bash
 tar -zxvf jdk-13_linux-x64_bin.tar.gz
 ```
 
 ## Environment Configuration
-``` shell
+``` bash
 vim /etc/profile
 export JAVA_HOME=/usr/java/jdk-13
 source /etc/profile
@@ -22,12 +22,12 @@ source /etc/profile
 
 ## Validation
 - Check the java version
-``` shell
+``` bash
 java -version
 ```
 
 - Check the gabage collection version
-``` shell
+``` bash
 java -XX:+PrintCommandLineFlags -version
 ```
 

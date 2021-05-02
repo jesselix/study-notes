@@ -112,7 +112,7 @@ arch-chroot /mnt
 
 ### Time zone
 - Set the time zone
-``` shell
+``` bash
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
 ```
