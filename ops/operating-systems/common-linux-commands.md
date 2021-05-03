@@ -15,8 +15,23 @@ uname -srm
 查看发行版
 cat /etc/os-release
 
-## Time
+## Time zone
+- Check time with timezone
+``` bash
 date -R
+```
 
-timedatectl set-timezone 'Asia/Shanghai'
-timedatectl set-timezone 'Pacific/Auckland'
+- Select timezone
+``` bash
+tzselect
+```
+
+- Copy file to /etc
+``` bash
+cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
+
+## Command alias
+``` bash
+vim .bashrc
+```

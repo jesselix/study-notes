@@ -9,8 +9,8 @@ apt update
 apt upgrade
 ```
 
-## Swap
-- Check if any swap file exist. If the followwing command returns empty, it means swap file doesn't exist. 
+## Swap file
+- Check if any swap file exist. If the followwing command returns empty, it means it doesn't exist. 
 ``` bash
 swapon -s
 ```
@@ -20,7 +20,7 @@ swapon -s
 cd /var
 ```
 
-- Create a swap file
+- Create a file
 ``` bash
 dd if=/dev/zero of=swapfile bs=1M count=2048
 ```
@@ -46,14 +46,17 @@ echo "/var/swapfile swap swap defaults 0 0" >> /etc/fstab
 ```
 
 ## Firewall
-防火墙 -> 端口设置 永久开放80端口 firewall-cmd --permanent --zone=public --add-port=80/tcp
+- Check firewall status
+``` bash
+ufw status
+```
 
-永久关闭80端口 firewall-cmd --permanent --zone=public --remove-port=80/tcp
+- Enable firewall
+``` bash
+ufw enable
+```
 
---zone #作用域 --add-port=80/tcp  #添加端口，格式为：端口/通讯协议 --permanent   #永久生效，没有此参数重启后失效
-
-查看开放的端口号 firewall-cmd --zone=public --list-ports
-
-查看防火墙状态 systemctl status firewalld.service
-
-查看防火墙命令 firewall-cmd -h
+- Add allowed port
+``` bash
+ufw allow 22
+```

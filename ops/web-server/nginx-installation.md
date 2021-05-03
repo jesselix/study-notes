@@ -1,30 +1,30 @@
 # Nginx Installation
 
 ## Install Nginx
-- Ubuntu
-``` shell
+- Install
+``` bash
 apt install nginx
 ```
 
 - Check the version
-``` shell
+``` bash
 nginx -v
 ```
 
 - Check the status
-``` shell
+``` bash
 service nginx status
 ```
 
 ## Firewall Configuration
 - Set permission for firewall
-``` shell
+``` bash
 ufw allow OpenSSH
 ufw allow 'Nginx HTTP'
 ```
 
 - Check firewall status
-``` shell
+``` bash
 ufw status
 ```
 

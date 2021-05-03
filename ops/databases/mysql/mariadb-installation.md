@@ -1,19 +1,33 @@
-# MariaDB Operations
+# MariaDB Installation
 
--->
--> 安装
-apt -y install mariadb-server mariadb-client
+## Install Nginx
+- Install
+``` bash
+install mariadb-server
+```
 
--> 检查版本
+- Check version
+``` bash
 mysql -V
+```
 
+- Login MariaDB
+``` bash
 mysql -u root -p
+```
 
-相关命令
-systemctl restart mysql #重启
-systemctl start mysql #启动
-systemctl stop mysql #关闭
-systemctl status mysql #检查状态
+- Other operations
+``` bash
+systemctl status mysql
+systemctl restart mysql
+systemctl start mysql
+systemctl stop mysql
+```
+
+- Reset root password
+``` bash
+
+```
 
 utf8问题
 /etc/mysql/my.cnf
