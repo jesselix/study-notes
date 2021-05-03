@@ -1,6 +1,6 @@
 # MariaDB Installation
 
-## Install Nginx
+## Install MariaDB
 - Install
 ``` bash
 install mariadb-server
@@ -16,35 +16,69 @@ mysql -V
 mysql -u root -p
 ```
 
-- Other operations
-``` bash
-systemctl status mysql
-systemctl restart mysql
-systemctl start mysql
-systemctl stop mysql
-```
-
 - Reset root password
 ``` bash
-
+alter user 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING password('ZzAlpha1!mr');
 ```
 
-utf8问题
-/etc/mysql/my.cnf
-[mysqld] 标签下加上：
-init_connect='SET collation_connection = utf8_unicode_ci'
-init_connect='SET NAMES utf8'
-character-set-server=utf8
-collation-server=utf8_unicode_ci
-skip-character-set-client-handshake
+- Other operations
+``` bash
+systemctl status mariadb
+systemctl start mariadb
+systemctl stop mariadb
+systemctl restart mariadb
+```
 
-/etc/mysql/mariadb.cnf
-把utf8注释的字段的注释去掉。
+## utf8 Problem
+- Check for character sets
+``` bash
+show variables like "%character%";show variables like "%collation%";
+```
 
-重启mariadb
+- modify character sets
+``` bash
+set names utf8mb4;
+```
 
-登陆MariaDB验证字符集
-mysql> show variables like "%character%";show variables like "%collation%";
+## Set remote connection
+- Check port 3306 status
+``` bash
+netstat -an | grep 3306
+```
 
+- The following return message means port 3306 only listens 127.0.0.1
+``` bash
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN
+```
 
-https://www.cnblogs.com/shenwenkai/p/10740266.html
+- Let port 3306 to be listened by other IPs
+``` bash
+vim /etc/mysql/mariadb.conf.d/50-server.cnf
+```
+
+- Find the following message and uncomment it.
+``` bash
+bind-address            = 127.0.0.1
+```
+
+- The following return message means port 3306 listens all IPs
+``` bash
+tcp6       0      0 :::3306                 :::*                    LISTEN
+```
+
+- Add allowed port
+``` bash
+ufw allow 3306
+```
+
+- Set root remote permission (not recommanded)
+``` bash
+grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
+flush privileges;
+```
+
+- Create a new user
+``` bash
+grant all on *.* to someone@'%' identified by '123456' with grant option;
+flush privileges;
+```
