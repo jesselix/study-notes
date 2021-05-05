@@ -23,7 +23,7 @@ This WordPress Installation is based on LEMP(Linux, Nginx, MariaDB and PHP) envi
 
 - Create a link under /etc/nginx/sites-enabled.
 ``` shell
-ln -s /etc/nginx/sites-available/xxx.com /etc/nginx/sites-enabled/xxx.com
+ln -s /etc/nginx/sites-available/xxx-com /etc/nginx/sites-enabled/xxx-com
 ```
 
 ## WordPress Configuration

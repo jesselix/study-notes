@@ -3,22 +3,12 @@
 ## Install MariaDB
 - Install
 ``` bash
-install mariadb-server
+apt install mariadb-server
 ```
 
 - Check version
 ``` bash
 mysql -V
-```
-
-- Login MariaDB
-``` bash
-mysql -u root -p
-```
-
-- Reset root password
-``` bash
-alter user 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING password('ZzAlpha1!mr');
 ```
 
 - Other operations
@@ -29,7 +19,12 @@ systemctl stop mariadb
 systemctl restart mariadb
 ```
 
-## utf8 Problem
+- Login MariaDB
+``` bash
+mysql -u root -p
+```
+
+## utf8 / utf8mb4 Problem
 - Check for character sets
 ``` bash
 show variables like "%character%";show variables like "%collation%";
@@ -38,6 +33,19 @@ show variables like "%character%";show variables like "%collation%";
 - modify character sets
 ``` bash
 set names utf8mb4;
+```
+
+## Create a New User
+``` bash
+CREATE USER 'junying'@'%' IDENTIFIED BY 'ZzAlpha1!mj';
+GRANT ALL PRIVILEGES ON *.* TO 'junying'@'%' WITH GRANT OPTION;
+flush privileges;
+```
+
+- Set root remote permission (not recommanded)
+``` bash
+grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
+flush privileges;
 ```
 
 ## Set remote connection
@@ -71,14 +79,5 @@ tcp6       0      0 :::3306                 :::*                    LISTEN
 ufw allow 3306
 ```
 
-- Set root remote permission (not recommanded)
-``` bash
-grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
-flush privileges;
-```
 
-- Create a new user
-``` bash
-grant all on *.* to someone@'%' identified by '123456' with grant option;
-flush privileges;
-```
+

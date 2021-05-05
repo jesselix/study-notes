@@ -4,6 +4,7 @@
 - Install
 ``` bash
 apt install php
+apt install php-fpm
 ```
 
 - Check version

@@ -1,7 +1,5 @@
 # Ubuntu Installation
 
-更新 -> 检查更新 apt update
-
 ## Check updates
 - Check for updates
 ``` bash
