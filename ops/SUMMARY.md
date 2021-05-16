@@ -11,15 +11,6 @@
       * [Ubuntu Installation](./operating-systems/ubuntu-installation.md)
       * [Ubuntu Networks](./operating-systems/ubuntu-networks.md)
 ---
-* [Virtual Machines](./virtual-machines/README.md)
-  * [KVM](./virtual-machines/kvm.md)
-  * [VMware](./virtual-machines/vmware.md)
----
-* [Containers](./containers/README.md)
-  * [Docker](./containers/docker.md)
-    * [Container Installation](./containers/container-installation.md)
-  * [Kubernetes](./containers/kubernetes.md)
----
 * [Web Server](./web-server/README.md)
   * [Nginx](./web-server/nginx.md)
     * [Nginx Installation](./web-server/nginx-installation.md)
@@ -53,6 +44,9 @@
   * [Python](./languages/python.md)
     * [Python Installation](./languages/python-installation.md)
 ---
+* [DevOps](./devops/README.md)
+  * [Jenkins](./devops/jenkins.md)
+---
 * [Utilities](./utilities/README.md)
   * [VS Code](./utilities/vs-code.md)
   * [Proxy](./utilities/proxy.md)
@@ -62,6 +56,11 @@
   * [WordPress](./utilities/wordpress.md)
     * [WordPress Installation](./utilities/wordpress-installation.md)
 ---
-* [DevOps](./devops/README.md)
-  * [Jenkins](./devops/jenkins.md)
-  
+* [Virtual Machines](./virtual-machines/README.md)
+  * [KVM](./virtual-machines/kvm.md)
+  * [VMware](./virtual-machines/vmware.md)
+---
+* [Containers](./containers/README.md)
+  * [Docker](./containers/docker.md)
+    * [Container Installation](./containers/container-installation.md)
+  * [Kubernetes](./containers/kubernetes.md)
