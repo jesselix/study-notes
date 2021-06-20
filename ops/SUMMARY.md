@@ -47,15 +47,6 @@
 * [DevOps](./devops/README.md)
   * [Jenkins](./devops/jenkins.md)
 ---
-* [Utilities](./utilities/README.md)
-  * [VS Code](./utilities/vs-code.md)
-  * [Proxy](./utilities/proxy.md)
-    * [SS Installation](./utilities/ss-installation.md)
-  * [GitBook](./utilities/gitbook.md)
-    * [GitBook Installation](./utilities/gitbook-installation.md)
-  * [WordPress](./utilities/wordpress.md)
-    * [WordPress Installation](./utilities/wordpress-installation.md)
----
 * [Virtual Machines](./virtual-machines/README.md)
   * [KVM](./virtual-machines/kvm.md)
   * [VMware](./virtual-machines/vmware.md)
@@ -64,3 +55,12 @@
   * [Docker](./containers/docker.md)
     * [Container Installation](./containers/container-installation.md)
   * [Kubernetes](./containers/kubernetes.md)
+---
+* [Utilities](./utilities/README.md)
+  * [VS Code](./utilities/vs-code.md)
+  * [Proxy](./utilities/proxy.md)
+    * [SS Installation](./utilities/ss-installation.md)
+  * [GitBook](./utilities/gitbook.md)
+    * [GitBook Installation](./utilities/gitbook-installation.md)
+  * [WordPress](./utilities/wordpress.md)
+    * [WordPress Installation](./utilities/wordpress-installation.md)
