@@ -5,6 +5,7 @@
 * [01. Basics](./basics/README.md)
   * [Object](./basics/object.md)
   * [Class](./basics/class.md)
+  * [Scope](./basics/scope.md)
 ---
 * [02. Data Structures](./data-structures/README.md)
   * [Collection](./data-structures/collection.md)
