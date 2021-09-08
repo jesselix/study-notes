@@ -5,8 +5,6 @@
 * [Operating Systems](./operating-systems/README.md)
   * [Linux](./operating-systems/linux.md)
     * [Common Linux Commands](./operating-systems/common-linux-commands.md)
-    * [Arch](./operating-systems/arch.md)
-      * [Arch Installation](./operating-systems/arch-installation.md)
     * [Ubuntu](./operating-systems/ubuntu.md)
       * [Ubuntu Installation](./operating-systems/ubuntu-installation.md)
       * [Ubuntu Networks](./operating-systems/ubuntu-networks.md)
