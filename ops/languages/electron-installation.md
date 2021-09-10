@@ -5,44 +5,46 @@
 go to: <u>Node.js Installation</u>
 
 - Install Electron
-``` shell
+``` bash
 cnpm install -g electron
 ```
 
 ## Validation
 - Check the Electron Version
-``` shell
+``` bash
 electron -v
 ```
 
 ## Install
 - Install electron-packager
-``` shell
+``` bash
 cnpm install electron-packager -g
 ```
 
 ## Run
+``` bash
 npm install
 npm start
+```
 
 ## Package
-Windows
-``` shell
+- Windows
+``` bash
 electron-packager . filebox --platform=win32 --arch=x64 --icon=./assets/images/icon.ico --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
-macOS
-``` shell
+- macOS
+``` bash
 electron-packager . filebox --platform=darwin --arch=x64 --icon=./assets/images/icon.icns --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
-Linux
-``` shell
+- Linux
+``` bash
 electron-packager . filebox --platform=linux --arch=x64 --icon=./assets/images/icon.png --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
-以上命令也可以在package.json里配置。如果在package.json里配置了，则：
-``` shell
+- Commands above can be configed in package.json and then run commands below.
+``` bash
 npm run package-win
 npm run package-mac
 npm run package-linux
