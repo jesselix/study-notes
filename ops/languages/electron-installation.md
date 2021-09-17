@@ -5,46 +5,46 @@
 go to: <u>Node.js Installation</u>
 
 - Install Electron
-``` bash
+``` zsh
 cnpm install -g electron
 ```
 
 ## Validation
 - Check the Electron Version
-``` bash
+``` zsh
 electron -v
 ```
 
 ## Install
 - Install electron-packager
-``` bash
+``` zsh
 cnpm install electron-packager -g
 ```
 
 ## Run
-``` bash
+``` zsh
 npm install
 npm start
 ```
 
 ## Package
 - Windows
-``` bash
+``` zsh
 electron-packager . filebox --platform=win32 --arch=x64 --icon=./assets/images/icon.ico --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - macOS
-``` bash
+``` zsh
 electron-packager . filebox --platform=darwin --arch=x64 --icon=./assets/images/icon.icns --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - Linux
-``` bash
+``` zsh
 electron-packager . filebox --platform=linux --arch=x64 --icon=./assets/images/icon.png --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - Commands above can be configed in package.json and then run commands below.
-``` bash
+``` zsh
 npm run package-win
 npm run package-mac
 npm run package-linux
