@@ -15,6 +15,11 @@ cnpm install -g electron
 electron -v
 ```
 
+- Output
+``` zsh
+v15.1.1
+```
+
 ## Install
 - Install electron-packager
 ``` zsh

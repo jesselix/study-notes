@@ -5,18 +5,18 @@
 https://nodejs.org/en/download/
 
 ## Validation
-- check the node.js version
+- Check the node.js version
 ``` zsh
 node -v
 ```
 
-- output
+- Output
 ``` zsh
-v12.18.3
+v16.10.0
 ```
 
 ## Install npm
-- if you are in China
+- If you are in China
 ``` zsh
 apt update -y
 apt install -y nodejs npm
@@ -25,26 +25,26 @@ npm install n -g
 n stable
 ```
 
-- if you are not in China, replace this command
+- If you are not in China, replace this command
 ``` zsh
 npm config set registry https://registry.npmjs.org/
 ```
 
-- output
+- Output
 ``` zsh
 + package@1.0.1
 added 1 package from 1 contributor in 0.754s
 ```
 
 ## Validation
-- check the npm version
+- Check the npm version
 ``` zsh
 npm -v
 ```
 
-- output
+- Output
 ``` zsh
-6.14.6
+7.24.2
 ```
 
 
