@@ -66,8 +66,4 @@ http://www.electronjs.org/docs/tutorial
 > Electron安装及打包exe  
 https://blog.csdn.net/fukaiit/article/details/90964319
 
-> 快速了解Electron：新一代基于Web的跨平台桌面技术  
-https://www.cnblogs.com/imstudy/p/11022315.html
 
-> 60分钟内创建一个Electron小程序  
-https://www.bilibili.com/video/av50541022?from=search&seid=9559229007381130577

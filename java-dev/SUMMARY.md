@@ -27,3 +27,6 @@
 ---
 * [06. Frameworks](./frameworks/README.md)
   * [MyBatis](./frameworks/mybatis.md)
+---
+* [07. IDEs](./ides/README.md)
+  * [IntelliJ IDEA](./ides/intellij-idea.md)
