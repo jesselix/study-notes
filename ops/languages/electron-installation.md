@@ -26,6 +26,11 @@ v15.1.1
 cnpm install electron-packager -g
 ```
 
+## Init the package.json
+``` zsh
+npm init
+```
+
 ## Run
 ``` zsh
 npm install
@@ -35,17 +40,17 @@ npm start
 ## Package
 - Windows
 ``` zsh
-electron-packager . filebox --platform=win32 --arch=x64 --icon=./assets/images/icon.ico --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
+electron-packager . project-name --platform=win32 --arch=x64 --icon=./assets/images/icon.ico --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - macOS
 ``` zsh
-electron-packager . filebox --platform=darwin --arch=x64 --icon=./assets/images/icon.icns --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
+electron-packager . project-name --platform=darwin --arch=x64 --icon=./assets/images/icon.icns --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - Linux
 ``` zsh
-electron-packager . filebox --platform=linux --arch=x64 --icon=./assets/images/icon.png --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
+electron-packager . project-name --platform=linux --arch=x64 --icon=./assets/images/icon.png --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - Commands above can be configed in package.json and then run commands below.
