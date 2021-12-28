@@ -14,7 +14,7 @@ tar -zxvf jdk-13_linux-x64_bin.tar.gz
 ```
 
 ## Environment Configuration
-``` bash
+``` zsh
 vim /etc/profile
 export JAVA_HOME=/usr/java/jdk-13
 source /etc/profile
@@ -22,7 +22,7 @@ source /etc/profile
 
 ## Validation
 - Check the java version
-``` bash
+``` zsh
 java -version
 ```
 
