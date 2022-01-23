@@ -2,17 +2,17 @@
 
 ## Install MariaDB
 - Install
-``` bash
+``` zsh
 apt install mariadb-server
 ```
 
 - Check version
-``` bash
+``` zsh
 mysql -V
 ```
 
 - Other operations
-``` bash
+``` zsh
 systemctl status mariadb
 systemctl start mariadb
 systemctl stop mariadb
@@ -20,62 +20,63 @@ systemctl restart mariadb
 ```
 
 - Login MariaDB
-``` bash
+``` zsh
 mysql -u root -p
 ```
 
 ## utf8 / utf8mb4 Problem
 - Check for character sets
-``` bash
+``` zsh
 show variables like "%character%";show variables like "%collation%";
 ```
 
 - modify character sets
-``` bash
+``` zsh
 set names utf8mb4;
 ```
 
 ## Create a New User
-``` bash
-CREATE USER 'junying'@'%' IDENTIFIED BY 'ZzAlpha1!mj';
-GRANT ALL PRIVILEGES ON *.* TO 'junying'@'%' WITH GRANT OPTION;
+``` zsh
+create user 'root'@'%' identified by 'root';
+grant all privileges on *.* to 'root'@'%' with grant option;
+flush privileges;
 flush privileges;
 ```
 
 - Set root remote permission (not recommanded)
-``` bash
+``` zsh
 grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
 flush privileges;
 ```
 
 ## Set remote connection
 - Check port 3306 status
-``` bash
+``` zsh
 netstat -an | grep 3306
 ```
 
 - The following return message means port 3306 only listens 127.0.0.1
-``` bash
+``` zsh
 tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN
 ```
 
 - Let port 3306 to be listened by other IPs
-``` bash
+``` zsh
 vim /etc/mysql/mariadb.conf.d/50-server.cnf
 ```
 
 - Find the following message and uncomment it.
-``` bash
+``` zsh
 bind-address            = 127.0.0.1
 ```
 
 - The following return message means port 3306 listens all IPs
-``` bash
+``` zsh
 tcp6       0      0 :::3306                 :::*                    LISTEN
 ```
 
 - Add allowed port
-``` bash
+``` zsh
 ufw allow 3306
 ```
 

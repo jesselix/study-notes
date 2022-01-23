@@ -2,17 +2,17 @@
 
 ## Login
 - Login by user1
-``` shell
+``` zsh
 mysql -u user1 -p
 ```
 
-``` shell
+``` zsh
 mysql -u root -p
 ```
 
 ## User Creation
 - Create a user 'user1'
-``` shell
+``` zsh
 create user 'user1'@'%' identified by 'www';
 
 grant all on *.* to 'user1'@'%';
@@ -26,13 +26,13 @@ delete from mysql where user = 'user1'
 
 
 ## Password
-``` shell
+``` zsh
 SET password for 'user1'@'localhost'=password('newpassword');
 SET password for 'user1'@'%'=password('newpassword');
 ```
 
 ## Authorization
-``` shell
+``` zsh
 grant all on *.* to 'jesselix'@'%';
 ```
 

@@ -7,10 +7,10 @@ ddd
 ### Rainbow Brackets
 Nothing you need to do
 
-### Sequence Diagram
+### SequenceDiagram
 Right click the method --> Sequence Diagram...
 
-### Maven Search
+### maven-search
 Menu -- > Tools -- > Maven search
 
 ### Grep Console
