@@ -29,7 +29,7 @@ mysql_secure_installation
 mysql -u root -p
 ```
 
-## utf8 / utf8mb4 Problem
+## utf8 / utf8mb4 problem
 - Check for character sets
 ``` zsh
 show variables like "%character%";show variables like "%collation%";
@@ -55,17 +55,24 @@ collation-server = utf8mb4_unicode_ci
 init_connect='SET NAMES utf8mb4'
 ```
 
-## Create a New User
-``` zsh
+## Create a new user
+``` sql
 create user 'jesselix'@'%' identified by 'www';
 grant all privileges on *.* to 'jesselix'@'%' with grant option;
 flush privileges;
 ```
 
-- Set root remote permission (not recommanded)
-``` zsh
-create user 'root'@'%' identified by 'root';
+## Set root remote permission (not recommanded)
+``` sql
+create user 'root'@'%' identified by 'root123';
 grant all privileges on *.* to 'root'@'%' with grant option;
+flush privileges;
+```
+
+## Setup new password for root @ localhost
+``` sql
+update user set plugin = 'mysql_native_password' where user = 'root' and host = 'localhost';
+alter user 'root'@'localhost' identified by 'root123';
 flush privileges;
 ```
 
@@ -82,10 +89,10 @@ tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN
 
 - Let port 3306 to be listened by other IPs
 ``` zsh
-vim /etc/mysql/mariadb.conf.d/50-server.cnf
+vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
-- Find the following message and uncomment it.
+- Find the following message and comment it.
 ``` zsh
 bind-address            = 127.0.0.1
 ```
