@@ -1,24 +1,41 @@
 # Container Installation
 
-## MySQL
+## MySQL/MariaDB/PostgreSQL Installation
 ### Install
-
-
-## MariaDB Installation
-### Install
-- Download MariaDB from Docker Hub.
-``` bash
+- Download MariaDB from Docker Hub
+``` zsh
+docker pull mysql
 docker pull mariadb
+docker pull postgres
 ```
 
+### Validation
 - Check the docker image
-``` bash
+``` zsh
 docker images
 ```
 
-### Docker Operations
+### Docker Operations for MySQL
 - Run the docker
-``` bash
+``` zsh
+docker run -p 3306:3306 --name docker-mysql \
+--restart=always \
+-v /var/docker/mysql/conf:/etc/mysql \
+-v /var/docker/mysql/logs:/var/log/mysql \
+-v /var/docker/mysql/data:/var/lib/mysql \
+-e TZ=Asia/Shanghai \
+-e MYSQL_ROOT_PASSWORD='root123' \
+-d mysql:latest
+```
+
+- Get into MySQL container
+``` zsh
+docker exec -it docker-mysql bash
+```
+
+### Docker Operations for MariaDB
+- Run the docker
+``` zsh
 docker run \
 -d \
 --name docker-mariadb \
@@ -29,27 +46,14 @@ docker run \
 -p 3306:3306 \
 mariadb:latest
 ```
-
 - Get into MariaDB container.
-``` bash
+``` zsh
 docker exec -it docker-mariadb bash
 ```
 
-## PostgreSQL Installation
-### Install
-- Download postgresSQL from Docker Hub
-``` shell
-docker pull postgres
-```
-
-### Validation
-- Check the docker image
-``` bash
-docker images
-```
-
-### Run
-``` bash
+### Docker Operations for PostgreSQL
+- Run the docker
+``` zsh
 docker run \
 -d \
 --name=docker-postgres \
@@ -62,11 +66,11 @@ postgres:latest
 ```
 
 - Get into PostgreSQL container.
-``` bash
+``` zsh
 docker exec -it docker-postgres bash
 ```
 
 ---
 ## References
-> Docker安装PostgreSQL  
-https://www.jianshu.com/p/75a7421cf787
+> 使用Docker搭建MySQL服务  
+https://www.cnblogs.com/sablier/p/11605606.html
