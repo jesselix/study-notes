@@ -16,6 +16,8 @@ docker images
 ```
 
 ### Docker Operations for MySQL
+- Edit the my.cnf file
+
 - Run the docker
 ``` zsh
 docker run --restart=always --privileged=true \

@@ -1,4 +1,3 @@
 # Java Dev
 
-Java开发
-
+This book is a study notes for Java Development.

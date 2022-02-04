@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 ---
 * [01. Basics](./basics/README.md)
+  * [IntelliJ IDEA](./basics/intellij-idea.md)
   * [Object](./basics/object.md)
   * [Class](./basics/class.md)
   * [Scope](./basics/scope.md)
@@ -27,6 +28,4 @@
 ---
 * [06. Frameworks](./frameworks/README.md)
   * [MyBatis](./frameworks/mybatis.md)
----
-* [07. IDEs](./ides/README.md)
-  * [IntelliJ IDEA](./ides/intellij-idea.md)
+  * [Spring Cloud](./frameworks/spring-cloud.md)
