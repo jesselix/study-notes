@@ -29,3 +29,4 @@
 * [06. Frameworks](./frameworks/README.md)
   * [MyBatis](./frameworks/mybatis.md)
   * [Spring Cloud](./frameworks/spring-cloud.md)
+    * [Spring Cloud Alibaba](./frameworks/spring-cloud-alibaba.md)
