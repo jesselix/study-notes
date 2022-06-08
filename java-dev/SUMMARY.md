@@ -10,11 +10,9 @@
 ---
 * [02. Data Structures](./data-structures/README.md)
   * [Collection](./data-structures/collection.md)
-    * [ArrayList](./data-structures/arraylist.md)
+    * [List](./data-structures/list.md)
     * [Set](./data-structures/set.md)
-  * [Map](./data-structures/map.md)
-    * [HashMap](./data-structures/hashmap.md)
-    * [TreeMap](./data-structures/treemap.md)
+    * [Map](./data-structures/map.md)
 ---
 * [03. Low Level](./low-level/README.md)
   * [GC](./low-level/gc.md)
