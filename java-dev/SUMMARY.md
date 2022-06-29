@@ -4,8 +4,9 @@
 ---
 * [01. Basics](./basics/README.md)
   * [IntelliJ IDEA](./basics/intellij-idea.md)
-  * [Object](./basics/object.md)
   * [Class](./basics/class.md)
+  * [Object](./basics/object.md)
+  * [Method](./basics/method.md)
   * [Scope](./basics/scope.md)
 ---
 * [02. Data Structures](./data-structures/README.md)
