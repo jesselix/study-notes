@@ -16,6 +16,7 @@
     * [Map](./data-structures/map.md)
 ---
 * [03. Low Level](./low-level/README.md)
+  * [Throwable](./low-level/throwable.md)
   * [GC](./low-level/gc.md)
   * [JVM](./low-level/jvm.md)
 ---
