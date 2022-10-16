@@ -2,17 +2,17 @@
 
 ## Install MySQL
 - Install
-``` zsh
+``` bash
 apt install mysql-server
 ```
 
 - Check version
-``` zsh
+``` bash
 mysql -V
 ```
 
 - Other operations
-``` zsh
+``` bash
 systemctl status mysql
 systemctl start mysql
 systemctl stop mysql
@@ -20,28 +20,28 @@ systemctl restart mysql
 ```
 
 - Setup
-``` zsh
+``` bash
 mysql_secure_installation
 ```
 
 - Login MySQL
-``` zsh
+``` bash
 mysql -u root -p
 ```
 
 ## utf8 / utf8mb4 problem
 - Check for character sets
-``` zsh
+``` bash
 show variables like "%character%";show variables like "%collation%";
 ```
 
 - modify my.cnf
-``` zsh
+``` bash
 vim /etc/mysql/my.cnf
 ```
 
 - insert the following contents
-``` zsh
+``` bash
 [client]
 default-character-set = utf8mb4
 
@@ -78,32 +78,32 @@ flush privileges;
 
 ## Set remote connection
 - Check port 3306 status
-``` zsh
+``` bash
 netstat -an | grep 3306
 ```
 
 - The following return message means port 3306 only listens 127.0.0.1
-``` zsh
+``` bash
 tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN
 ```
 
 - Let port 3306 to be listened by other IPs
-``` zsh
+``` bash
 vim /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 
 - Find the following message and comment it.
-``` zsh
+``` bash
 bind-address            = 127.0.0.1
 ```
 
 - The following return message means port 3306 listens all IPs
-``` zsh
+``` bash
 tcp6       0      0 :::3306                 :::*                    LISTEN
 ```
 
 - Add allowed port
-``` zsh
+``` bash
 ufw allow 3306
 ```
 
