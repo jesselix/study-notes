@@ -18,3 +18,4 @@
 ---
 * [Searching](./searching/README.md)
   * [Binary Search](./searching/binary-search.md)
+---
