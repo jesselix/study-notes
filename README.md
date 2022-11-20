@@ -1,2 +1,2 @@
 # Study Notes
-My Study Notes
+Study Notes of Computer Science & Software Development
