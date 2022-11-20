@@ -1,4 +1,2 @@
-# Books
-
-Visit my library website:  
-[junyingli.org](http://junyingli.org)
+# Study Notes
+My Study Notes
