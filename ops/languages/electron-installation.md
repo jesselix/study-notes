@@ -2,59 +2,70 @@
 
 ## Install
 - Install Node.js  
-go to: <u>Node.js Installation</u>
+go to: 
+[Node.js Installation](/languages/node-js-installation.md)
+
+- If you are in China, modify the electron mirror
+``` bash
+npm config set ELECTRON_MIRROR https://registry.npmmirror.com/-/binary/electron/
+
+```
+- or edit the npm config file
+``` bash
+npm config edit
+```
 
 - Install Electron
-``` zsh
-cnpm install -g electron
+``` bash
+npm install -g electron
 ```
 
 ## Validation
 - Check the Electron Version
-``` zsh
+``` bash
 electron -v
 ```
 
 - Output
-``` zsh
-v15.1.1
+``` bash
+v22.0.2
 ```
 
 ## Install
 - Install electron-packager
-``` zsh
+``` bash
 cnpm install electron-packager -g
 ```
 
 ## Init the package.json
-``` zsh
+``` bash
 npm init
 ```
 
 ## Run
-``` zsh
+``` bash
 npm install
 npm start
 ```
 
 ## Package
 - Windows
-``` zsh
+``` bash
 electron-packager . project-name --platform=win32 --arch=x64 --icon=./assets/images/icon.ico --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - macOS
-``` zsh
+``` bash
 electron-packager . project-name --platform=darwin --arch=x64 --icon=./assets/images/icon.icns --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - Linux
-``` zsh
+``` bash
 electron-packager . project-name --platform=linux --arch=x64 --icon=./assets/images/icon.png --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules
 ```
 
 - Commands above can be configed in package.json and then run commands below.
-``` zsh
+``` bash
 npm run package-win
 npm run package-mac
 npm run package-linux
@@ -65,10 +76,11 @@ npm run package-linux
 
 
 ## References
-> Electron Documentation  
-http://www.electronjs.org/docs/tutorial
+> Electron  
+https://www.electronjs.org/
 
 > Electron安装及打包exe  
 https://blog.csdn.net/fukaiit/article/details/90964319
 
-
+> electron 安装步骤
+http://www.manongjc.com/detail/29-hxqrypcghyryvzz.html
