@@ -20,6 +20,10 @@ npm config edit
 npm install -g electron
 ```
 
+``` bash
+npm install -g nodemon
+```
+
 ## Validation
 - Check the Electron Version
 ``` bash
