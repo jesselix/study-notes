@@ -35,17 +35,22 @@ show variables like "%character%";show variables like "%collation%";
 set names utf8mb4;
 ```
 
+## Modify root's Password
+``` bash
+alter user 'root'@'localhost' identified by 'password_123';
+flush privileges;
+```
+
 ## Create a New User
 ``` bash
-create user 'root'@'%' identified by 'root';
-grant all privileges on *.* to 'root'@'%' with grant option;
-flush privileges;
+create user 'jesselix'@'%' identified by 'password_123';
+grant all privileges on *.* to 'jesselix'@'%' with grant option;
 flush privileges;
 ```
 
 - Set root remote permission (not recommanded)
 ``` bash
-grant all privileges on *.* to 'root'@'%' identified by '123456' with grant option;
+grant all privileges on *.* to 'root'@'%' identified by 'password_123' with grant option;
 flush privileges;
 ```
 

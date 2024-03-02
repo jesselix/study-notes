@@ -32,7 +32,7 @@ electron -v
 
 - Output
 ``` bash
-v22.0.2
+v25.0.1
 ```
 
 ## Install

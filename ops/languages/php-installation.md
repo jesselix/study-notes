@@ -2,12 +2,12 @@
 
 ## Install PHP
 - Install
-``` zsh
+``` bash
 apt install php
 apt install php-fpm
 ```
 
 - Check version
-``` zsh
+``` bash
 php -v
 ```

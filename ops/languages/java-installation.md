@@ -1,26 +1,32 @@
 # Java Installation
 
 ## Install
-- Create a java folder under usr  
+
+- Update softwares list
 ``` bash
-cd /usr
-mkdir java
-chmod 777 java
+apt update
 ```
 
-- Put installer package in this folder and unzip it  
+- Install OpenJDK
 ```bash
-tar -zxvf jdk-13_linux-x64_bin.tar.gz
+apt install openjdk-17-jdk
 ```
 
 ## Environment Configuration
+
+- Edit .bashrc
 ``` bash
-vim /etc/profile
-export JAVA_HOME=/usr/java/jdk-13
-source /etc/profile
+vim ~/.bashrc
+```
+
+- Add the following lines
+``` bash
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
 ```
 
 ## Validation
+
 - Check the java version
 ``` bash
 java -version

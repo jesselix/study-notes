@@ -1,5 +1,11 @@
 # Nginx Installation
 
+## Delete apache2
+- Check if apache2 exists or not. Apache2 takes the port 80 by default. You can either delete apache2 or change the port for nginx.
+``` bash
+apt autoremove apache2
+```
+
 ## Install Nginx
 - Install
 ``` bash
@@ -34,11 +40,7 @@ ufw allow 'Nginx HTTP'
 ufw status
 ```
 
-## Nginx Continue
-- Check Nginx by typing ip in browser.
+## Nginx Browser Check
+- Check Nginx by typing ip in browser. If it shows "Welcome to nginx!", it means it's successful.
 
-## Delete apache2
-- apache2 takes the port 80 by default. You can either delete apache2 or change the port for nginx.
-``` bash
-apt autoremove apache2
-```
+

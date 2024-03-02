@@ -2,59 +2,59 @@
 
 ## Check updates
 - Check for updates
-``` zsh
+``` bash
 apt update
 apt upgrade
 ```
 
 ## Swap file
-- Check if any swap file exist. If the followwing command returns empty, it means it doesn't exist. 
-``` zsh
+- Check if any swap file exist. If the following command returns empty, it means it doesn't exist. 
+``` bash
 swapon -s
 ```
 
 - Get into var direction
-``` zsh
+``` bash
 cd /var
 ```
 
 - Create a file
-``` zsh
+``` bash
 dd if=/dev/zero of=swapfile bs=1M count=2048
 ```
 
 - Turn it into swap file
-``` zsh
+``` bash
 mkswap swapfile
 ```
 
 - Enable this swap file
-``` zsh
+``` bash
 swapon swapfile
 ```
 
 - Modify permission for swap file
-``` zsh
+``` bash
 chmod -R 0600 swapfile
 ```
 
 - Load swap file automatically when computer starts
-``` zsh
+``` bash
 echo "/var/swapfile swap swap defaults 0 0" >> /etc/fstab
 ```
 
 ## Firewall
 - Check firewall status
-``` zsh
+``` bash
 ufw status
 ```
 
 - Enable firewall
-``` zsh
+``` bash
 ufw enable
 ```
 
 - Add allowed port
-``` zsh
+``` bash
 ufw allow 22
 ```

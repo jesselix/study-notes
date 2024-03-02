@@ -1,6 +1,0 @@
-# Electron
-
-## Configuration
-
-
-## Lifecycle
